@@ -1,0 +1,53 @@
+ol {
+  background-color: yellow;
+}
+
+ol .par{
+  color: green;
+}
+
+ol .primo{
+  text-transform:uppercase;
+}
+
+.header {
+  color: red;
+}
+
+.italico{
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+.lista{
+  font-size: 20px;
+}
+.dalista{
+color: rgb(8, 188, 233);
+}
+.java{
+  background-color: rgb(248, 2, 195);
+}
+
+ol em {
+  font-weight: bold;
+  }
+/* BONUS */
+.link1:hover{
+  font-weight: bold;
+  color:orange ;
+}
+.link2:hover{
+  font-weight: bold;
+  color: green ;
+}.link3:hover{
+  font-weight: bold;
+  color:black ;
+}.link4:hover{
+  font-weight: bold;
+  color: yellow;
+}.link5:hover{
+  font-weight: bold;
+  color:rgb(20, 185, 20) ;
+}
+
