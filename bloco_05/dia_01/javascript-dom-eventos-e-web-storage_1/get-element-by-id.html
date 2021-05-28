@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="exercicio1">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle" class="exercici4">Subtítulo</h4>
+    <p id="second-paragraph" class="exercicio1">Segundo parágrafo!</p>
+
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      document.getElementById("page-title").innerText = "Título da página.";
+      document.getElementById("second-paragraph").innerText = "Este é o segundo paragrafo da página";
+      document.getElementById("subtitle").innerText = "Este é o subtitulo da página";
+
+      document.getElementsByClassName("exercicio1")[0].style.backgroundColor = 'yellow';
+
+      document.getElementsByClassName("exercici4")[0].style.color = 'green';
+    </script>
+  </body>
+</html>
