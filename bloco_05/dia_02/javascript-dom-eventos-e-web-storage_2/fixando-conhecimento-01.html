@@ -114,11 +114,18 @@
         let elementH3 = document.createElement('h3');
         div.appendChild(elementH3);
         elementH3.innerHTML = tagh3[index];
+        elementH3.className = 'description';
       }
 
-      
+      h1.className = 'title';
+      div.removeChild(divLeftCont);
 
+      divRightCont.style.marginRight = 'auto';
 
+      div.style.backgroundColor = 'green';
+
+      ul.lastChild.remove();
+      ul.lastChild.remove();
 
 
 
