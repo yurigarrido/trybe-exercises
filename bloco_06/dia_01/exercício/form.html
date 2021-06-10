@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--  QUESTAO 1 -->
+  <fieldset>
+    <legend>Dados</legend>
+    <div class="espaco-div">
+      <label for="input-nome"> Nome:
+        <input type="text" maxlength="40" required name="input-name" id="input-nome">
+      </label>
+    </div>
+    <div class="espaco-div">
+      <label for="entrada-email">Email:
+        <input type="email" maxlength="50" required name="input-email" id="entrada-email">
+      </label>
+    </div>
+    <div class="espaco-div">
+      <label for="cpf">CPF:
+        <input type="text" maxlength="9" required id="cpf" name="cpf-number">
+      </label>
+    </div>
+    <div class="espaco-div">
+      <label for="endereco">Endereço:
+        <input type="text" maxlength="200" required id="endereco" name="campo-endereco">
+      </label>
+    </div>
+    <div class="espaco-div">
+      <label for="">Cidade:
+        <input type="text" maxlength="28" required id="cidade" name="campo-cidade">
+      </label>
+    </div>
+    <div class="espaco-div click-estado">
+      <label for="estado">Estado:
+        <select name="campo-estado" id="estado"></select>
+      </label>
+    </div>
+    <div class="espaco-div">
+      <p>Moradia:</p>
+      <label for="radio-casa">Casa</label>
+        <input type="radio" name="radio" id="radio-casa" required >
+      <label for="radio-apt">Apartamento</label>
+        <input type="radio" name="radio" id="radio-apt" required>
+    </div>
+  </fieldset>
+ <!--  QUESTAO 2 -->
+  <script src="script.js"></script>
+</body>
+</html>
