@@ -8,48 +8,79 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!--  QUESTAO 1 -->
+ <form action="" method="get">
+  <!--  QUESTAO 1 -->
+    <fieldset>
+      <legend>Dados</legend>
+      <div class="espaco-div">
+        <label for="input-nome"> Nome:
+          <input type="text" maxlength="40" required name="input-name" id="input-nome">
+        </label>
+      </div>
+      <div class="espaco-div">
+        <label for="entrada-email">Email:
+          <input type="email" maxlength="50" required name="input-email" id="entrada-email">
+        </label>
+      </div>
+      <div class="espaco-div">
+        <label for="cpf">CPF:
+          <input type="text" maxlength="9" required id="cpf" name="cpf-number">
+        </label>
+      </div>
+      <div class="espaco-div">
+        <label for="endereco">Endereço:
+          <input type="text" maxlength="200" required id="endereco" name="campo-endereco">
+        </label>
+      </div>
+      <div class="espaco-div">
+        <label for="">Cidade:
+          <input type="text" maxlength="28" required id="cidade" name="campo-cidade">
+        </label>
+      </div>
+      <div class="espaco-div click-estado">
+        <label for="estado">Estado:
+          <select name="campo-estado" id="estado"></select>
+        </label>
+      </div>
+      <div class="espaco-div">
+        <p>Moradia:</p>
+        <label for="radio-casa">Casa</label>
+          <input type="radio" name="radio" id="radio-casa" required >
+        <label for="radio-apt">Apartamento</label>
+          <input type="radio" name="radio" id="radio-apt" required>
+      </div>
+    </fieldset>
+  <!--  QUESTAO 2 -->
   <fieldset>
-    <legend>Dados</legend>
+    <legend>historico</legend>
     <div class="espaco-div">
-      <label for="input-nome"> Nome:
-        <input type="text" maxlength="40" required name="input-name" id="input-nome">
-      </label>
+      <label for="resumo">Resumo de curriculo:</label>
+      <br>
+      <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" placeholder="limite de 1000" required></textarea>
     </div>
     <div class="espaco-div">
-      <label for="entrada-email">Email:
-        <input type="email" maxlength="50" required name="input-email" id="entrada-email">
-      </label>
+      <label for="cargo">Cargo:</label>
+      <input type="text" name="cargo" id="cargo" required maxlength="40">
     </div>
     <div class="espaco-div">
-      <label for="cpf">CPF:
-        <input type="text" maxlength="9" required id="cpf" name="cpf-number">
-      </label>
+      <label for="descCargo">Descrição do cargo:</label>
+      <br>
+      <input type="text" name="descCargo" id="descCargo" maxlength="500" required cols="30" rows="10"></input>
     </div>
     <div class="espaco-div">
-      <label for="endereco">Endereço:
-        <input type="text" maxlength="200" required id="endereco" name="campo-endereco">
-      </label>
+      <label for="dia">Dia:</label>
+      <input type="number" name="dia" id="dia" required>
     </div>
     <div class="espaco-div">
-      <label for="">Cidade:
-        <input type="text" maxlength="28" required id="cidade" name="campo-cidade">
-      </label>
-    </div>
-    <div class="espaco-div click-estado">
-      <label for="estado">Estado:
-        <select name="campo-estado" id="estado"></select>
-      </label>
+      <label for="mes">Mês:</label>
+      <input type="number" name="mes" id="mes" required>
     </div>
     <div class="espaco-div">
-      <p>Moradia:</p>
-      <label for="radio-casa">Casa</label>
-        <input type="radio" name="radio" id="radio-casa" required >
-      <label for="radio-apt">Apartamento</label>
-        <input type="radio" name="radio" id="radio-apt" required>
+      <label for="ano">Ano:</label>
+      <input type="number" name="ano" id="ano" required>
     </div>
   </fieldset>
- <!--  QUESTAO 2 -->
+</form>
   <script src="script.js"></script>
 </body>
 </html>
