@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+  
   <title>Forms</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -58,7 +61,7 @@
    
   <!--  QUESTAO 2 -->
  <div class=".container">
-    
+   
     <div class="container">
       <label class="form-label" for="resumo">Resumo de curriculo:</label>
       <br>
@@ -74,17 +77,17 @@
     </div>
     <div class="row g-3 container">
       <div class="col">
-        <label class="form-label" for=""></label>
-        <input type="number" id="dia" class="form-control" placeholder="Dia" aria-label="First name">
+        <label class="form-label" for="datepicker"></label>
+        <input type="text" id = " datepicker "  class="form-control" placeholder="Dia" >
       </div>
-      <div class="col">
+     <!--  <div class="col">
         <label class="form-label" for=""></label>
         <input type="number" id="mes" class="form-control" placeholder="Mês" aria-label="Last name">
       </div>
       <div class="col">
         <label class="form-label" for=""></label>
         <input type="number" id="ano" class="form-control" placeholder="Ano" aria-label="Last name">
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="container text-center espaco-botao">
@@ -93,6 +96,11 @@
   </div>
 </form>
 
-  <script src="script.js"></script>
+<script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
