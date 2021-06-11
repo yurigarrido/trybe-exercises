@@ -9,6 +9,7 @@ for (let index = 0; index < estados.length; index += 1) {
   select.appendChild(estado);
   estado.innerHTML = estados[index];
   estado.value = opcoesDeEstado[index];
+  estado.classList.add('form-select');
   
 }
 

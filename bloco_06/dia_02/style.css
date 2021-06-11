@@ -1,4 +1,15 @@
 body{
-  max-width: 80%;
-  border: 40px auto 20px auto;
+  max-width: 60%;
+  width: 100%;
+  border: 40px auto;
+  background-color: antiquewhite;
+}
+
+header, form{
+  background-color: rgb(233, 178, 107);
+  box-shadow:10px 5px 15px rgb(140, 150, 150);
+}
+
+.espaco-botao{
+  padding: 20px;
 }
