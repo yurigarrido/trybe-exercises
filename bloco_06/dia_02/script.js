@@ -9,6 +9,7 @@ for (let index = 0; index < estados.length; index += 1) {
   select.appendChild(estado);
   estado.innerHTML = estados[index];
   estado.value = opcoesDeEstado[index];
+  estado.classList.add('form-select');
   
 }
 
@@ -16,7 +17,7 @@ for (let index = 0; index < estados.length; index += 1) {
 // PARTE 02
 // Validação da data de início
 
-let dia = document.getElementById('dia');
+/* let dia = document.getElementById('dia');
 let mes = document.getElementById('mes');
 let ano = document.getElementById('ano');
 
@@ -36,7 +37,7 @@ botao.addEventListener('click', function () {
 } 
 );
 
-/* parte 03 */
+/* parte 03 
 let divValido = document.getElementById('valido');
 let criaP = 
 
@@ -46,4 +47,4 @@ function criaDiv(){
     divValido.appendChild('p').innerText = nome.value;
   }
 }
-criaDiv();
+criaDiv(); */
