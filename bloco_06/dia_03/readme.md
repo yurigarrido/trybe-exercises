@@ -1,4 +1,4 @@
-nesse dia, realizamos um fork desse repositorio e fizemos essa atividade. Há uma repositorio com todo o código em meus repositorios.
+nesse dia, realizamos um fork desse repositorio e fizemos essa atividade. Há uma repositorio com todo o código em meus repositorios. ou no link ( https://github.com/yurigarrido/exercise-tech-gallery/tree/tech-gallery )
 
 
 
