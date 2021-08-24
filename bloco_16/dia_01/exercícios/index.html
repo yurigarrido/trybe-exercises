@@ -31,14 +31,27 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
+      <button id="randon">Random color</button>
     </div>
     <script>
+
+function criarCor() {
+    const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+    let cor = '#';
+    const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+    for (let i = 0; i < 6; i += 1) {
+        cor += oneChar[aleatorio()];
+    }
+    return cor;
+}
+
       const ESTADO_INICIAL = {
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
         index: 0,
       };
 const NEXT_COLOR = 'NEXT_COLOR';
 const PREVIUS_COLOR = 'PREVIUS_COLOR';
+const RANDOM_COLOR = "RANDOM_COLOR";
 
 
 // actions
@@ -50,16 +63,24 @@ const PREVIUS_COLOR = 'PREVIUS_COLOR';
         return ({ type: PREVIUS_COLOR})
       }
 
+      const randomColor = () => {
+        return ({ type: RANDOM_COLOR})
+      }
+
 // reducer
       const reducer = ( state = ESTADO_INICIAL, action ) => {
         switch(action.type) {
           case NEXT_COLOR:
             return ({
-              ...state, index: state.index > 4 ? 1 : state.index +1,
+              ...state, index: state.index > (state.colors.length - 1) ? 1 : state.index +1,
             });
           case PREVIUS_COLOR:
             return ({
               ...state, index: state.index > 0 ? state.index -1 : 0,
+            })
+          case RANDOM_COLOR:
+            return ({
+              ...state, colors : [...state.colors, criarCor()], index: state.colors.length,
             })
           default: ESTADO_INICIAL;
         }
@@ -71,11 +92,6 @@ const PREVIUS_COLOR = 'PREVIUS_COLOR';
         const { colors, index } = store.getState();
         console.log(colors);
         console.log(index);
-
-        
-        if ( index > 5) {
-           index = 0
-        }
 
         const value = document.getElementById('value');
         value.innerHTML = colors[index]
@@ -89,6 +105,10 @@ const PREVIUS_COLOR = 'PREVIUS_COLOR';
 
       const buttonPrevious =  document.getElementById('previous').addEventListener("click", () => {
         store.dispatch(previusColor())
+      })
+
+      const buttonRandom = document.getElementById('randon').addEventListener("click", () => {
+        store.dispatch(randomColor())
       })
 
     </script>
