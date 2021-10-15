@@ -19,3 +19,7 @@ SELECT Name AS 'Nome do projeto', Hours AS 'Tempo de Trabalho' FROM Scientists.P
 /* exercício 7 */
 SELECT Name FROM Scientists.Scientists
 ORDER BY Name;
+
+/* exercício 8 */
+SELECT Name FROM Scientists.Projects
+ORDER BY Name DESC;
