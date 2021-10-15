@@ -26,3 +26,7 @@ ORDER BY Name DESC;
 
 /* exercício 9 */
 SELECT CONCAT ('O projeto ', Name, ' precisou de ', Hours, ' horas para ser concluido') FROM Scientists.Projects;
+
+/* exercício 10 */
+SELECT Name, Hours FROM Scientists.Projects
+ORDER BY Hours DESC LIMIT 3;
