@@ -45,3 +45,6 @@ ORDER BY Hours ASC LIMIT 1 OFFSET 2;
 /* exercício 14 */
 SELECT * FROM Scientists.Projects
 ORDER BY Hours ASC LIMIT 5;
+
+/* exercício 15 */ 
+SELECT CONCAT('Existem ', COUNT(Name), ' cientistas na tabela Scientists') FROM Scientists.Scientists;
