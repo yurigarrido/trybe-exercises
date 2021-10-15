@@ -6,3 +6,6 @@ SELECT 1, 2, 3;
 
 /* exercício 3 */
 SELECT 10 + 15;
+
+/* exercício 4 */
+SELECT 10 * 3;
