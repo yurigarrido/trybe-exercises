@@ -33,3 +33,7 @@ ORDER BY Hours DESC LIMIT 3;
 
 /* exercício 11 */
 SELECT DISTINCT Project FROM Scientists.AssignedTo;
+
+/* exercício 12 */
+SELECT Name FROM Scientists.Projects
+ORDER BY Hours DESC LIMIT 1;
