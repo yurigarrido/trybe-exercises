@@ -12,3 +12,6 @@ SELECT 10 * 3;
 
 /* exercício 5 */
 SELECT * FROM Scientists.Scientists;
+
+/* exercício 6 */
+SELECT Name AS 'Nome do projeto', Hours AS 'Tempo de Trabalho' FROM Scientists.Projects;
