@@ -9,3 +9,6 @@ SELECT 10 + 15;
 
 /* exercício 4 */
 SELECT 10 * 3;
+
+/* exercício 5 */
+SELECT * FROM Scientists.Scientists;
