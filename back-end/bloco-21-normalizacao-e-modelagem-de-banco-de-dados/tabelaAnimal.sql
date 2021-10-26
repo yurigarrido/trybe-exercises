@@ -1,0 +1,6 @@
+
+CREATE TABLE Animal (
+	id_animal INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(25) NOT NULL,
+    sexo VARCHAR(4) NOT NULL, 
+    localizacao VARCHAR(50) NOT NULL)
