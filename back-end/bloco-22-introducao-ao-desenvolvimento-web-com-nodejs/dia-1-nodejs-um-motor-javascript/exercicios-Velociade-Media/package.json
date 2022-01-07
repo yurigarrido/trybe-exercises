@@ -1,0 +1,15 @@
+{
+  "name": "exercicios-velociade-media",
+  "version": "1.0.0",
+  "description": "Vamos criar mais um script. Dessa vez, para calcular a velocidade média de um carro numa corrida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "velocidade": "node run.js"
+  },
+  "author": "yurigarrido",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
