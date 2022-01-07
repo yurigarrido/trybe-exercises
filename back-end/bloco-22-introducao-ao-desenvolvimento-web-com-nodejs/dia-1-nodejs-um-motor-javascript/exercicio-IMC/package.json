@@ -1,0 +1,15 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "realizando os exercícios do dia 22.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imc": "node imc.js"
+  },
+  "author": "yurigarrido",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
