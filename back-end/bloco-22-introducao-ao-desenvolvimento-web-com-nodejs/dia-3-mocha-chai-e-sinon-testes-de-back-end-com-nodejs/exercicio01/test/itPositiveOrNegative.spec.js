@@ -1,10 +1,6 @@
 const { expect } = require('chai');
 const { itPositiveOrNegative} = require('../itPositiveOrNegative')
 
-const negativeResponse = itPositiveOrNegative(-4)
-// const positiveResponse = itPositiveOrNegative(1)
-// const neutralResponse = itPositiveOrNegative(0)
-
 describe('testing func itPositiveOrNegative with number positive', () => {
 
   it('pass the function a positive number', () => {
